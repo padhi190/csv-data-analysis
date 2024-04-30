@@ -12,9 +12,6 @@ st.header("Upload your CSV file:")
 
 data = st.file_uploader("Upload your CSV file", type=["csv"])
 
-# query = st.text_area("Enter your query", height=100)
-# submit = st.button("Submit")
-
 if "messages" not in st.session_state:
     st.session_state["messages"] = [{"role": "assistant", "content": "Hello, how can I help you today?"}]
 
